@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/mariano/modelizacion/2021-Ingenieria/Entrega/AndresBarron'
+let g:netrw_dirhist_7='/home/mariano/Escritos-Presentaciones/2021-ICAMS-MeetingDrautz/06-June'
+let g:netrw_dirhist_6='/home/mariano/.local/share/vifm/fuse'
+let g:netrw_dirhist_5='/home/mariano/Escritos-Presentaciones'
+let g:netrw_dirhist_4='/home/mariano/Escritos-Presentaciones/2021-RDM/01-WHOAMI'
+let g:netrw_dirhist_3='/backup/data/Anaconda/vasp/p4vasp/install'
+let g:netrw_dirhist_2='/home/mariano/CuadernoTrabajo/2021-SurfacesInterfaces/Exercises/p4vasp-0.3.30/install'
+let g:netrw_dirhist_1='/home/mariano/modelizacion/SolucionesProblemas/Guia3-MEF02/Guia3-Python/Ejercicio2'
+let g:netrw_dirhist_0='/home/mariano/.local/share/vifm/fuse/001_aberdeen.ssh/Clases/2021-SurfacesInterfaces/Exercises/04-StructureModels-ex/Figures'
+let g:netrw_dirhist_9='/home/mariano/CuadernoTrabajo/2021-SurfacesInterfaces/Exercises/04-StructureModels-ex/Figures'

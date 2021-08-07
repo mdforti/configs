@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/mariano/CuadernoTrabajo/ZrO2/t-O2Zr/effmass_vs_vol/ZrO2-new-00/BANDSdir'
+let g:netrw_dirhist_2='/home/mariano/CuadernoTrabajo/ZrO2/t-O2Zr/effmass_vs_vol/ZrO2-new-00'
+let g:netrw_dirhist_1='/home/mariano/CuadernoTrabajo/ZrO2/t-O2Zr/effmass_vs_vol/ZrO2-new-00/BANDSdir'
+let g:netrw_dirhist_0='/home/mariano/CuadernoTrabajo/ZrO2/t-O2Zr/effmass_vs_vol/ZrO2-new-00'
+let g:netrw_dirhist_9='/home/mariano/CuadernoTrabajo/scripts/vaspforcesplotter'
+let g:netrw_dirhist_8='/data/Interfaces/FeBCC-Fe3O4/FeO2term-FROMPEEL/DYNAMICS'
+let g:netrw_dirhist_7='/data/Interfaces/FeBCC-Fe3O4/FeO2term-FROMPEEL/FeO2Hollow_fromPEEL_d40'
+let g:netrw_dirhist_6='/data/Interfaces/FeBCC-Fe3O4/FeO2term-FROMPEEL'
+let g:netrw_dirhist_5='/data/Interfaces/FeBCC-Fe3O4/FeO2term-FROMPEEL/DYNAMICS'
+let g:netrw_dirhist_4='/data/Interfaces/FeBCC-Fe3O4/FeO2term-FROMPEEL'
