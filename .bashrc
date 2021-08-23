@@ -48,10 +48,37 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+get_conda_env () {
+  if [ "$CONDA_DEFAULT_ENV" == "base" ]
+  then
+    echo ""
+  else
+    echo $(basename "$CONDA_DEFAULT_ENV")
+  fi
+}
+
+get_git_status () {
+  ismod=$(git status 2>/dev/null | grep modifi)
+  if [ ${#ismod} -gt 0 ]
+  then
+    gitopencolor='\e[01;41m'
+    gitclosecolor='\e[m'
+    #00;48m'
+  else
+    gitopencolor='\e[01;32m'
+    gitclosecolor='\e[00;48m'
+
+  fi
+  echo  -e "$gitopencolor "$(git symbolic-ref --short HEAD 2>/dev/null)" $gitclosecolor"
+}
+
 unset PS1
 if [ "$color_prompt" = yes ]; then
-    PS1='[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[00m\ '
-    PS1=$PS1"\e[1;31m\$(git symbolic-ref --short HEAD 2>/dev/null)\e[m ] \r\n\$ "
+    PS1='\033[01;39m_______________________________________\033[m\r\n'
+    PS1+='\033[01;37m\]$(get_conda_env)\033[m'
+    PS1+='[\033[01;34m\]\u@\h\[\033[00m\]:\[\033[01;33m\]\W\[\033[00m\ '
+    PS1+='$(get_git_status) \r\n$ ' 
+#    PS1+="\e[1;31m\$(git symbolic-ref --short HEAD 2>/dev/null)\e[m ] \r\n\$ "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\W\$ '
 fi
